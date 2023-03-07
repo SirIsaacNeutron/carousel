@@ -44,6 +44,16 @@ body {
     right: 5%;
 }
 
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
 .carousel-slide {
     position: absolute;
     inset: 0;
