@@ -57,6 +57,10 @@ body {
 .carousel-slide {
     position: absolute;
     inset: 0;
+    opacity: 0;
+}
+
+.carousel-slide.active {
     opacity: 1;
 }
 
