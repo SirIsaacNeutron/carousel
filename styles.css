@@ -58,10 +58,18 @@ body {
     position: absolute;
     inset: 0;
     opacity: 0;
+
+    transition: opacity 200ms ease-in-out;
+    transition-delay: 200ms;
 }
 
 .carousel-slide.active {
     opacity: 1;
+
+    /* 
+    Without this the background color behind the image will show up for a moment
+    */
+    transition-delay: 0ms;
 }
 
 .carousel-slide img {
