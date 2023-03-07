@@ -19,7 +19,9 @@ carouselButtons.forEach((button) => {
         }
 
         slides.children[newIndex].classList.add("active")
-
         previouslyActiveSlide.classList.remove("active")
+
+        const carouselInfoText = button.closest(".carousel").querySelector(".carousel-info > p")
+        carouselInfoText.textContent = `Image ${newIndex + 1} of ${slides.children.length}`
     })
 })

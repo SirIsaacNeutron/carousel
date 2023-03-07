@@ -65,6 +65,7 @@ body {
 
 .carousel-slide.active {
     opacity: 1;
+    z-index: 1; /* enable users to click and drag the correct image to a new tab */
 
     /* 
     Without this the background color behind the image will show up for a moment
@@ -78,4 +79,21 @@ body {
     height: 100%;
     object-fit: cover; /* maintain aspect ratio */
     object-position: center;
+}
+
+.carousel-info {
+    position: absolute;
+    z-index: 2;
+
+    top: 80%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .1);
+    color: rgba(255, 255, 255, .8);
+
+    font-size: 1.2rem;
+    padding: 0 20px;
 }
